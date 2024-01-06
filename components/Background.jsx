@@ -17,7 +17,7 @@ export function GradientSphere() {
       <LayerMaterial side={THREE.BackSide}>
         <Color color="#444" alpha={1} mode="normal" />
         <Depth
-          colorA="green"
+          colorA="seagreen"
           colorB="black"
           alpha={0.5}
           mode="normal"

@@ -3,6 +3,7 @@ import { GradientSphere } from "@/components/Background";
 import TextContent from "@/components/Content";
 import CustomCursor from "@/components/Cursor";
 import { Effects } from "@/components/Effcts";
+import ScrollAngleAnimation from "@/components/Footer";
 import { Tree } from "@/components/Scene";
 import {
   CameraShake,
@@ -31,7 +32,7 @@ export default function Home() {
           <Environment preset="forest" />
           {/* <OrbitControls /> */}
           <GradientSphere />
-          <Sparkles scale={10} count={100} />
+          <Sparkles scale={10} count={300} />
           <CameraShake maxPitch={0.01} maxRoll={0.01} maxYaw={0.04} />
           <Effects />
           <directionalLight
@@ -47,12 +48,13 @@ export default function Home() {
           outerScale={1.2}
           outerStyle={{
             border: "2px solid grey",
-  backgroundColor: "rgba(0, 0, 0, 0)"
+            backgroundColor: "rgba(0, 0, 0, 0)",
           }}
           innerStyle={{
             backgroundColor: "grey",
           }}
         />
+        {/* <ScrollAngleAnimation/> */}
       </div>
     </Suspense>
   );
